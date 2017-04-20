@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 #include <streambuf>
-#include <cstdlib>
 #include <unistd.h>
 
 using namespace std;
@@ -26,10 +25,6 @@ string getoutputfilename (string inputfilename, int number = 0) {
 }
 
 int main () {
-  #if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
-  system("chcp 65001"); // Unicode for CMD in Windows
-  #endif
-
   cout << ""
     "Hoạt động:\n"
     "1. Đọc nội dung file, lưu vào bộ nhớ đệm\n"
