@@ -1,0 +1,6 @@
+out
+temp
+tmp
+*.out
+*.temp
+*.tmp
