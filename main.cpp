@@ -26,20 +26,20 @@ string getoutputfilename (string inputfilename, int number = 0) {
 
 int main () {
   cout << ""
-    "Hoạt động:\n"
-    "1. Đọc nội dung file, lưu vào bộ nhớ đệm\n"
-    "2. Tìm tên file\n"
-    "3. Viết nội dung file vào tên mới\n"
-    "4. Kết thúc\n"
+    "Operating Principle:\n"
+    "1. Read file to buffer\n"
+    "2. Find a name\n"
+    "3. Write content to a file with the new found name\n"
+    "4. End\n"
   ;
 
   string inputfilename;
-  cout << "Nhập tên file: ";
+  cout << "Enter filename: ";
   getline(cin, inputfilename, '\n');
 
   string outputfilename = getoutputfilename(inputfilename);
-  cout << "Đang viết vào file " << outputfilename << endl;
+  cout << "Writing " << outputfilename << endl;
   ofstream(outputfilename) << getfilecontent(inputfilename);
-  cout << "Đã viết vào file " << outputfilename << endl;
+  cout << "Written " << outputfilename << endl;
   return 0;
 }

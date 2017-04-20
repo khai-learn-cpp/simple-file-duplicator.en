@@ -1,14 +1,10 @@
-# simple-file-duplicator — Tiếng Việt (UTF-8)
+# simple-file-duplicator — English
 
-## Hoạt động
+## Operating Principle
 
-Nhân đôi file dựa theo tên đã nhập:
-1. Yêu cầu người dùng nhập tên file
-2. Đọc file (không kiểm tra lỗi)
-3. Thêm một chữ số thích hợp vào sau tên file, dùng như tên file mới
-4. Viết vào file mới
-5. Kết thúc
-
-## Lưu ý
-
-* Chương trình không hề kiểm tra ngoại lệ, vd: file không tồn tại, ...
+Duplicate file according to entered filename:
+1. Ask user to enter filename
+2. Read file (without checking error)
+3. Add a suitable number at the end of the name to make a new name
+4. Write to file with that new name
+5. End
