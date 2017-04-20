@@ -2,5 +2,5 @@ out
 temp*
 tmp*
 *.out
-*.temp
-*.tmp
+*.temp*
+*.tmp*
