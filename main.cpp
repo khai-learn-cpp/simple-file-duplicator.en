@@ -6,18 +6,18 @@
 
 using namespace std;
 
-auto getfilecontent (string filename) {
+string getfilecontent (string filename) {
   typedef istreambuf_iterator<char> icsi;
   ifstream file(filename);
   return string(icsi(file), icsi());
 }
 
-auto exists (string filename) {
+bool exists (string filename) {
   return access(filename.c_str(), F_OK) != -1;
 }
 
 string getoutputfilename (string inputfilename, int number = 0) {
-  auto outputfilename = inputfilename + to_string(number);
+  string outputfilename = inputfilename + to_string(number);
   return exists(outputfilename)
     ? getoutputfilename(inputfilename, number + 1)
     : outputfilename
@@ -37,7 +37,7 @@ int main () {
   cout << "Nhập tên file: ";
   getline(cin, inputfilename, '\n');
 
-  auto outputfilename = getoutputfilename(inputfilename);
+  string outputfilename = getoutputfilename(inputfilename);
   cout << "Đang viết vào file " << outputfilename << endl;
   ofstream(outputfilename) << getfilecontent(inputfilename);
   cout << "Đã viết vào file " << outputfilename << endl;
