@@ -1,6 +1,6 @@
 out
-temp
-tmp
+temp*
+tmp*
 *.out
 *.temp
 *.tmp
