@@ -11,6 +11,4 @@ Nhân đôi file dựa theo tên đã nhập:
 
 ## Lưu ý
 
-* Command Prompt của Windows không hỗ trợ UTF-8
-
 * Chương trình không hề kiểm tra ngoại lệ, vd: file không tồn tại, ...
